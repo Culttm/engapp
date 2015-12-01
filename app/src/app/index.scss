@@ -1,0 +1,70 @@
+/**
+ *  If you want to override some bootstrap variables, you have to change values here.
+ *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+ */
+$navbar-inverse-link-color: #fff;
+$navbar-inverse-link-hover-color: #212121;
+$icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+/**
+ *  Do not remove the comments below. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+// bower:scss
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/**
+ *  Do not remove the comments below. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+// injector
+// endinjector
+
+
+
+body{
+	background:  url('../assets/images/bg.png') center 0 repeat;
+}
+
+.body{
+	background: #fff;
+	max-width: 1140px;
+	padding: 20px 25px 5px;
+	border-radius: 5px;
+	box-shadow: 0 1px 2px rgba(#000, .5);
+
+	.page-title{
+		margin-top: 0;
+		margin-bottom: 15px;
+	}
+}
+
+.user-top-bar{
+	margin-top: 5px;
+}
+
+.a{
+	transition: all .2s ease;
+	cursor: pointer;
+
+	&:hover{
+		color: #0097A7;
+	}
+}
+
+.open{
+	.a{
+		color: #0097A7;
+	}
+}
+
+.card{
+	min-height: 100px;
+}

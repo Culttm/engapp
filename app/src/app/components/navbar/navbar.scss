@@ -1,0 +1,20 @@
+.navbar-static-top{
+	background: #0097A7;
+	border-color: #017984;
+
+	.current{
+		color: $navbar-inverse-link-hover-color;
+	}
+}
+
+.navbar-inverse .navbar-nav > li.current > a{
+	color: $navbar-inverse-link-hover-color;
+
+	&:hover{
+		color: $navbar-inverse-link-hover-color;
+	}
+}
+
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus{
+	color: $navbar-inverse-link-hover-color;
+}

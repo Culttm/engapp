@@ -1,0 +1,50 @@
+<div class="module" ng-cloak>
+    <div class="row">
+        <div class="col-sm-8">
+            <h1 class="page-title">{{ vm.collectionTitle }}</h1>
+        </div>
+        <div class="col-sm-4 text-right">
+            <div class="user-top-bar">
+                <span class="a"><i class="glyphicon glyphicon-plus"></i> Add card</span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4"  ng-repeat="collection in vm.collection">
+            <div  class="thumbnail">
+                <div class="caption">
+                    <div class="card">
+                        <div class="h4">Card № {{collection.id}}</div>
+                        <div class="row">
+                            <div class="col-sm-7">
+                                <div class="h5">{{collection.word_native}}</div>
+                                <div class="h5">{{collection.word_translated}}</div>
+                            </div>
+                            <div class="col-sm-5 text-right">
+                                <div class="thumbnail">
+                                    <img ng-src="{{ vm.host }}/images/{{ collection.image }}" alt="{{collection.word_native}}" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <div class="label label-success">{{collection.type}}</div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="text-right">
+                                    <div class="dropdown">
+                                        <span type="button" data-toggle="dropdown" class="glyphicon glyphicon-cog a"></span>
+                                        <ul class="dropdown-menu text-left">
+                                            <li><a href=""><span class="glyphicon glyphicon-edit"></span> Edit</a></li>
+                                            <li><a href="" ng-click="vm.removeCard(collection.id)" ><span class="glyphicon glyphicon-trash"></span> Delete</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
